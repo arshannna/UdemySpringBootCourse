@@ -32,6 +32,8 @@ public class App02HelloWorldSpring {
 		
 		System.out.println(context.getBean(Address.class)); //can use the name or type of bean for retrieval
 		
+		System.out.println(context.getBean("person5Qualifier"));
+		
 		//Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println); //go back and understand this line better
 
 	}
