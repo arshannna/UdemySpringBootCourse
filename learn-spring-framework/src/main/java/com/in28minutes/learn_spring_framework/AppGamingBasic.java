@@ -10,10 +10,9 @@ public class AppGamingBasic {
 		
 		//var allows the compiler to infer the variable based on the value assigned.
 		
-		
-		//var marioGame = new MarioGame(); 
-		var superContraGame = new SuperContraGame();
-		var gameRunner = new GameRunner(superContraGame);
+		//var game = new MarioGame(); 
+		var game = new SuperContraGame();
+		var gameRunner = new GameRunner(game);
 		gameRunner.run();
 
 	}
