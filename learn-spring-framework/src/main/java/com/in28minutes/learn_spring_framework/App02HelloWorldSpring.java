@@ -17,9 +17,12 @@ public class App02HelloWorldSpring {
 		System.out.println(context.getBean("name"));
 		System.out.println(context.getBean("age"));
 		System.out.println(context.getBean("person"));
+		
+		//System.out.println(context.getBean(Address.class)); //can use the name or type of bean for retrieval
 		System.out.println(context.getBean("address2"));
 		
-		System.out.println(context.getBean(Address.class)); //can use the name or type of bean for retrieval
+		System.out.println(context.getBean("person2MethodCall")); //can create beans using existing beans
+		System.out.println(context.getBean("person3Parameters"));
 
 	}
 
