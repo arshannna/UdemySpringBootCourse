@@ -30,7 +30,7 @@ public class HelloWorldConfiguration {
 		return new Person("Ravi", 20);
 	}
 	
-	@Bean
+	@Bean(name = "address2") //customize the bean name to be called something other than the method name
 	public Address address(){
 		
 		return new Address("Baker Street", "London");
