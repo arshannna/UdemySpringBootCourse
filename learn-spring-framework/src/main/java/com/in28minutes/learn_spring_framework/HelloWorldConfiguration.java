@@ -35,7 +35,8 @@ public class HelloWorldConfiguration {
 		
 		return new Address("Baker Street", "London");
 	}
-	
-	
+//	
+//	@Bean
+//	public 
 	
 }
