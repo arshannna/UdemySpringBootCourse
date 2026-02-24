@@ -7,7 +7,9 @@ public class AppGamingBasic {
 
 	public static void main(String[] args) {
 		
-		var marioGame = new MarioGame();
+		//var allows the compiler to infer the variable based on the value assigned.
+		
+		var marioGame = new MarioGame(); 
 		var gameRunner = new GameRunner(marioGame);
 		gameRunner.run();
 
