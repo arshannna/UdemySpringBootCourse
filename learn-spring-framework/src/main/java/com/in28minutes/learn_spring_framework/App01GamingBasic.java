@@ -16,8 +16,8 @@ public class App01GamingBasic {
 		var game = new PacmanGame(); 
 		
 		//2: Object Creation + Wiring of Dependencies
-		var gameRunner = new GameRunner(game);
 		//Game is a Dependency of GameRunner
+		var gameRunner = new GameRunner(game);
 		
 		gameRunner.run();
 
