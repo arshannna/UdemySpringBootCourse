@@ -1,7 +1,6 @@
 package com.in28minutes.learn_spring_framework;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
@@ -11,7 +10,7 @@ import com.in28minutes.learn_spring_framework.game.GamingConsole;
 //How can have we have Spring automatically create the beans for us?
 @Configuration
 @ComponentScan("com.in28minutes.learn_spring_framework") //Package to scan for spring components
-public class App03GamingSpringBeans {
+public class GamingAppLauncherApplication {
 	
 //	@Bean //testing out @Component to auto create this bean
 //	public GamingConsole game(){
@@ -33,7 +32,7 @@ public class App03GamingSpringBeans {
 		
 		try(var context = 
 				new AnnotationConfigApplicationContext(
-						App03GamingSpringBeans.class);){
+						GamingAppLauncherApplication.class);){
 		
 			context.getBean(GamingConsole.class).up();
 			
