@@ -10,7 +10,7 @@ public class App03GamingSpringBeans {
 
 	public static void main(String[] args) {
 		
-		// my attempt
+		// MY ATTEMPT
 		/*
 		try(var context =
 				new AnnotationConfigApplicationContext(

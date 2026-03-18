@@ -10,7 +10,7 @@ import com.in28minutes.learn_spring_framework.game.PacmanGame;
 @Configuration
 public class GamingConfiguration {
 	
-	// my attempt
+	// MY ATTEMPT
 	/*
 	@Bean
 	public PacmanGame pacmanGame(){
