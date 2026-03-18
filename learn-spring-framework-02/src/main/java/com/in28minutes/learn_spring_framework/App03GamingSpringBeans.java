@@ -20,14 +20,13 @@ public class App03GamingSpringBeans {
 //		return game;
 //	}
 	
-	@Bean
-	public GameRunner gameRunner(GamingConsole game){
-		
-		//System.out.println("Parameter: " + game);
-		
-		var gameRunner = new GameRunner(game); //or can call the the method directly, game -> game()
-		return gameRunner;
-	}
+//	public GameRunner gameRunner(GamingConsole game){
+//		
+//		//System.out.println("Parameter: " + game);
+//		
+//		var gameRunner = new GameRunner(game); //or can call the the method directly, game -> game()
+//		return gameRunner;
+//	}
 
 	public static void main(String[] args) {
 		
