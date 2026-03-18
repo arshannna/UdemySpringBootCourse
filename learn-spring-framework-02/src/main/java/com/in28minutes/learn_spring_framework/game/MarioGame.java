@@ -3,7 +3,7 @@ package com.in28minutes.learn_spring_framework.game;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component //gives an error because two matching beans in main due to pacman and mariogame so needs some qualifier
+@Component //gives an error because two matching beans in main due to pacman and mariogame so needs some qualifier/primary
 @Primary
 public class MarioGame implements GamingConsole{
 	
