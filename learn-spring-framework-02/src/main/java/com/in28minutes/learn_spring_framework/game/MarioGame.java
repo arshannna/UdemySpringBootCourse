@@ -1,5 +1,8 @@
 package com.in28minutes.learn_spring_framework.game;
 
+import org.springframework.stereotype.Component;
+
+//@Component //gives an error because two matching beans in main due to pacman and mariogame
 public class MarioGame implements GamingConsole{
 	
 	public void up(){
