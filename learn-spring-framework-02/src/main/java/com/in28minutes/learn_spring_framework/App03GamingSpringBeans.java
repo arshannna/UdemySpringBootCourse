@@ -20,7 +20,7 @@ public class App03GamingSpringBeans {
 //		return game;
 //	}
 	
-//	public GameRunner gameRunner(GamingConsole game){
+//	public GameRunner gameRunner(GamingConsole game){ //Exercise make @Compoenet to auto create bean
 //		
 //		//System.out.println("Parameter: " + game);
 //		
