@@ -1,11 +1,8 @@
-package com.in28minutes.learn_spring_framework;
+package com.in28minutes.learn_spring_framework.game;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-
-import com.in28minutes.learn_spring_framework.game.GameRunner;
-import com.in28minutes.learn_spring_framework.game.GamingConsole;
 	
 //How can have we have Spring automatically create the beans for us?
 @Configuration
