@@ -1,36 +1,37 @@
 package com.in28minutes.learn_spring_framework;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 import com.in28minutes.learn_spring_framework.game.GameRunner;
 import com.in28minutes.learn_spring_framework.game.GamingConsole;
 import com.in28minutes.learn_spring_framework.game.PacmanGame;
-
+	
+//How can have we have Spring automatically create the beans for us?
+@Configuration
 public class App03GamingSpringBeans {
+	
+	@Bean
+	public GamingConsole game(){
+		
+		var game = new PacmanGame();
+		return game;
+	}
+	
+	@Bean
+	public GameRunner gameRunner(GamingConsole game){
+		
+		var gameRunner = new GameRunner(game); //or can call the the method directly, game -> game()
+		return gameRunner;
+	}
 
 	public static void main(String[] args) {
 		
-		// MY ATTEMPT
-		/*
-		try(var context =
-				new AnnotationConfigApplicationContext(
-						GamingConfiguration.class)){
-			
-			var game = context.getBean("pacmanGame");
-			
-			var gameRunner = new GameRunner(game);
-			
-			gameRunner.run();
-			
-			
-		}
-		*/
-		
-		// ANSWER KEY
 		
 		try(var context = 
 				new AnnotationConfigApplicationContext(
-						GamingConfiguration.class);){
+						App03GamingSpringBeans.class);){
 		
 			context.getBean(GamingConsole.class).up();
 			
@@ -38,27 +39,6 @@ public class App03GamingSpringBeans {
 		
 		}
 		
-		
-		
-		// Recreating this using spring
-		
-		/*
-		//var allows the compiler to infer the variable based on the value assigned.
-		
-		//var game = new MarioGame(); 
-		//var game = new SuperContraGame();
-		
-		//1: Object Creating
-		var game = new PacmanGame(); 
-		
-		//2: Object Creation + Wiring of Dependencies
-		//Game is a Dependency of GameRunner
-		var gameRunner = new GameRunner(game);
-		
-		gameRunner.run();
-		
-		*/
-
 	}
 
 }
