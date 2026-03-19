@@ -1,6 +1,5 @@
 package com.in28minutes.learn_spring_framework.examples.a1;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -8,7 +7,17 @@ import org.springframework.stereotype.Component;
 
 // {}
 
-
+/* NOTES:
+ * 
+ * @Component(...): An instance of class (a spring bean) will be managed by Spring framework
+ * @Dependecy: GameRunner needs GamingConsole implementation
+ * @ComponentScan: Specify package names to scan it and it's sub packages for components
+ * DependencyInjection: Identify beans, their dependencies, and wire them together (provides IOC - Inversion of Control)
+ * 		Spring Beans: An object managed by Spring Framework
+ * 		IoC Container: Manages the life cycle of beans and dependencies
+ * 			Types: ApplicationContext (complex), BeanFactory (simpler features - rarely used)
+ * 		Autowiring: Process of wiring in dependencies for a Spring Bean
+ */
 
 @Component
 class YourBuisnessClass{
