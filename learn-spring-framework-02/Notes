@@ -1,0 +1,30 @@
+
+NOTES 03/19:
+
+@Component(...): An instance of class (a spring bean) will be managed by Spring framework
+@Dependecy: GameRunner needs GamingConsole implementation
+@ComponentScan: Specify package names to scan it and it's sub packages for components
+DependencyInjection: Identify beans, their dependencies, and wire them together (provides IOC - Inversion of Control)
+	Spring Beans: An object managed by Spring Framework
+ 	IoC Container: Manages the life cycle of beans and dependencies
+ 		Types: ApplicationContext (complex), BeanFactory (simpler features - rarely used)
+ 	Autowiring: Process of wiring in dependencies for a Spring Bean
+ 	
+ 	
+@Component vs @Bean
+
+@Component
+	- Can be used on any Java class
+	- Very easy, just need to add annotation
+	- Autowiring very easy, just use field, setter, or constructor injection
+	- Spring Framework creates the beans
+	- Better for Instatiating Beans for Application code @Component
+	- 
+	
+@Bean
+	- Typically used on methods in Spring Configuration classes
+	- You need to write all the code to create the bean and autowire dependencies
+	- Autowiring easy, use a method call or method parameters
+	- Developer creates the bean creation code
+	- Better for Custom Buisness Logic and Instatiating beans for 3rd party libraries @Bean
+	
