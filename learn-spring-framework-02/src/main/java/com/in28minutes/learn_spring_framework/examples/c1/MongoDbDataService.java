@@ -1,10 +1,12 @@
-package com.in28minutes.learn_spring_framework.examples.a0;
+package com.in28minutes.learn_spring_framework.examples.c1;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 //MY ATTEMPT
 
 @Component
+@Primary //He added
 public class MongoDbDataService implements DataService {
 	
 	public int[] retrieveData(){ 
