@@ -18,13 +18,13 @@ DependencyInjection: Identify beans, their dependencies, and wire them together 
 	- Very easy, just need to add annotation
 	- Autowiring very easy, just use field, setter, or constructor injection
 	- Spring Framework creates the beans
-	- Better for Instatiating Beans for Application code @Component
+	- Better for instantiating Beans for Application code @Component
 	- 
 	
 @Bean
 	- Typically used on methods in Spring Configuration classes
-	- You need to write all the code to create the bean and autowire dependencies
+	- You need to write all the code to create the bean and auto wire dependencies
 	- Autowiring easy, use a method call or method parameters
 	- Developer creates the bean creation code
-	- Better for Custom Buisness Logic and Instatiating beans for 3rd party libraries @Bean
+	- Better for Custom Business Logic and instantiating beans for 3rd party libraries @Bean
 	
